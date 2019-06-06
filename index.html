@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es"  ng-app="Pokemon">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+		<title>Pokedex</title>
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="lib/bootstrap/css/bootstrap.css">
+	  <link rel="icon" href="https://i.pinimg.com/originals/1b/41/20/1b412053a7b59ab47149a3eb59e5804d.png">
+	  
+	
+</head>
+<body ng-controller="pokedex">
+	<div class="menu">
+		
+		<ul>
+			<li><a href="file:///C:/Users/Oscar/Desktop/pokemon/inicio%20de%20sesion.html?#">Inicio de sesión</a></li>
+			<li><a href="">Registro</a></li>
+			<li><a href="file:///C:/Users/Oscar/Desktop/pokemon/index.html#">Pokedex</a></li>
+		</ul>
+	</div>
+	
+
+	<center>
+		<div class="container">
+			<img src="img/pokemon.png" class="imagen">
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" ng-repeat="poke in pokedexB">
+				<div class="lol">
+					<img src="{{poke.data.sprites.front_default}}" class="img">
+				<p>{{poke.data.name}}</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	 <!-- script angularJS -->
+	<script src="lib/angular/angular.js"></script>
+	<!-- local script -->
+	<script src="js/script.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	</center>
+	
+</body>
+</html>
